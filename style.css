@@ -1,0 +1,316 @@
+/* Modern Portfolio Design */
+@media (min-width : 1024px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        font-family: 'Inter', sans-serif;
+        scroll-behavior: smooth;
+        line-height: 1.6;
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+    /* Smooth Gradient Background for Sections */
+    .headline, .Second_page, .Third_page {
+        background: linear-gradient(135deg, 
+            rgba(94, 59, 255, 0.05) 0%, 
+            rgba(255, 107, 107, 0.05) 100%);
+        padding: 80px 0;
+    }
+
+    /* Modern Header */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px ;
+        transition: all 0.3s ease;
+    }
+
+    .Nested_Logo {
+        font-size: 24px;
+        font-weight: 800;
+        color: var(--primary-color);
+        text-decoration: none;
+        letter-spacing: -1px;
+    }
+
+    /* Hero Section Redesign */
+    .headline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: left;
+        padding: 0 7%;
+        margin-top: 0;
+        background-image: none;
+    }
+
+    .info {
+        font-size: 4rem;
+        font-weight: 800;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .about {
+        max-width: 600px;
+        font-size: 1.1rem;
+        color: var(--secondary-color);
+        margin-bottom: 30px;
+    }
+
+    /* Social Media Icons with Hover Effect */
+    .Social_media_icons {
+
+        display: flex;
+        gap: 20px;
+    }
+
+    .Social_media_icons section {
+        transition: transform 0.3s ease;
+    }
+
+    .Social_media_icons section:hover {
+        transform: scale(1.2);
+    }
+
+    /* Project Cards with Modern Design */
+    .Second_page_content, 
+    .Second_page_content_two, 
+    .Second_page_content_three {
+        display: flex;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 40px;
+        transition: all 0.3s ease;
+    }
+
+    .Second_page_content:hover,
+    .Second_page_content_two:hover,
+    .Second_page_content_three:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    .Second_page_block{
+        margin-left: 60px;
+    }
+
+    #Heading, #Heading_two {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .Second_page_Frame {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--secondary-color);
+    }
+
+    .tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .tags_container, 
+    .tag_container_two, 
+    .tag_container_three {
+        background: var(--primary-color);
+        color: white;
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-size: 0.8rem;
+    }
+
+    .Second_page_container {
+        display: inline-block;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        border-radius: 25px;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .Second_page_container:hover {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    /* About Section Redesign */
+    #about-title h1 {
+        color: var(--primary-color);
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    #skills-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .skill-item {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .skill-item:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Improved Dropdown and Footer Design */
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+        /* padding: 50px 10%; */
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown {
+        background: var(--background-color);
+        border-radius: 15px;
+        padding: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .dropdown h2 {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dropdown h2::after {
+        content: '▼';
+        font-size: 0.8rem;
+        color: var(--secondary-color);
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease;
+    }
+
+    .skill:hover {
+        transform: translateX(10px);
+    }
+
+    .skill img {
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        background: var(--background-color);
+        border-radius: 15px;
+    }
+
+    .footer img {
+        max-width: 100px;
+        opacity: 0.7;
+        transition: all 0.3s ease;
+    }
+
+    .footer img:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+
+    .contact-me {
+        background-image: url("contact form shapes-mobile@2x.png");
+        background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+        color: white;
+        text-align: center;
+        padding: 100px 10%;
+        border-top-left-radius: 100px;
+    }
+
+    .contact-me h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .name, .email, .message {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .submit-button {
+        background: white;
+        color: var(--primary-color);
+        border: none;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+    .submit-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .Second_page{
+        padding: 0px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+}
